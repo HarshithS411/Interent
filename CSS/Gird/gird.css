@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.containerG {
+    height: 500px;
+    width: 75%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: 
+    "one one two two two"
+    "one one two two two"
+    "three four two two two"
+    "three four two two two"
+    "three five five six six";
+    gap: 1em;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+}
+.oneG {
+    grid-area: one;
+}
+.twoG {
+    grid-area: two;
+}
+.threeG {
+    grid-area: three;
+}
+.fourG{
+    grid-area: four;
+}
+.fiveG{
+    grid-area: five;
+}
+.sixG{
+    grid-area: six;
+}
