@@ -51,15 +51,28 @@ html, body{
 }
 .rgbad{
     border: 2px groove green;
+    background-color: black;
+    color: white;
 }
 .rgbae{
     border: 2px ridge violet;
+    background-color: blue;
 }
 .rgbaf{
     border: 2px inset tomato;
+    background: linear-gradient(red, green);
 }
 .rgbag{
     border: 2px outset aqua;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(255,5,0,1) 100%);
+    color: white;
+}
+.rgbah{
+    border: 2px solid black;
+    color: white;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 35%, rgba(61,255,0,1) 100%);
 }
 
 .containerslides{
@@ -124,4 +137,30 @@ html, body{
 }
 .different {
     border-radius: 10% 20% 30% 40%;
+}
+
+.containerA {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    gap: 1.5em;
+}
+.offset {
+    box-shadow: 3px 2px gray;
+    text-shadow: 3px 2px gray;
+}
+.blur {
+    box-shadow: 3px 2px 2px gray;
+    text-shadow: 3px 2px 2px gray;
+}
+.blurSpread {
+    box-shadow: 3px 2px 2px 1px gray;
+    text-shadow: 3px 2px 2px gray;
+}
+.multiple {
+    box-shadow: 5px 5px 3px gray, -5px -5px 3px red;
+    text-shadow: 5px 5px 3px gray, -5px -5px 3px red;
 }
