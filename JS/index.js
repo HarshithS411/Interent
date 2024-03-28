@@ -105,12 +105,15 @@ let obj1 = {
     salary: 1000,
     address: 'Bangaluru'
 }
-console.log(Object.keys(obj)); 
+console.log(Object.keys(obj1)); 
 let obj2 = {
     name: 'Mr X',
     job: 'Hacker',
     salary: 1000,
     address: 'Bangaluru'
 }
+console.log(Object.keys(obj2));
 let isEq1 = obj1 == obj1; 
 let isEq2 = obj2 === obj2; 
+console.log(isEq1);
+console.log(isEq2);
